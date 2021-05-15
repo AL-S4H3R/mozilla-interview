@@ -7,19 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="https://www.mozilla.org/media/img/favicons/mozilla/favicon.d25d81d39065.ico">
-    <!-- <link rel="stylesheet" href="assets/fonts.css"> -->
-    <!-- <link rel="stylesheet" href="assets/styles.css"> -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <nav class="p-4 text-gray-100 flex items-center justify-between" style="background-color: #27294e;">
-        <img src="./assets/img/logo-relay.png" alt="" class="h-8">
-        <div class="text-gray-200 text-2xl space-x-4">
-            <i class="fas fa-ellipsis-v"></i>
-            <i class="fas fa-user-circle"></i>
+    <!-- Navbar -->
+    <nav class="nav" >
+        <img src="./assets/img/logo-relay.png" alt="" class="logo">
+        <div>
+            <i class="fas fa-th nav-icon"></i>
+            <i class="fas fa-user-circle nav-icon"></i>
         </div>
     </nav>
+
+    <!-- Menu header -->
+    <header class="menu">
+        <div>
+            <p>
+                Menu
+                <i class="fas fa-angle-down mt-1"></i>
+            </p>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <section>
+        <div class="header-container">
+            <h2>Manage your relay aliases</h2>
+        </div>
+        <hr/>
+        <div class="btn">
+            <button>
+                <i class="fas fa-plus"></i>
+                Generate New Alias
+            </button>
+        </div>
+        <p class="text-center"> <strong>4</strong> remaining aliases</p>
+    </section>
+    
     <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
     <script src="assets/app.js"></script>
 </body>

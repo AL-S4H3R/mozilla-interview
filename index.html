@@ -30,6 +30,10 @@
             </p>
         </div>
     </header>
+    <div class="extended inactive">
+        <p style="margin: 0.5rem;">Home</p>
+        <p style="margin: 0.5rem;">FAQ</p>
+    </div>
 
     <!-- main section -->
     <section>
@@ -39,7 +43,7 @@
         <hr/>
 
         <div class="btn">
-            <button>
+            <button style="background-color: #0069ed; color: white;">
                 <i class="fas fa-plus"></i>
                 Generate New Alias
             </button>
@@ -61,44 +65,48 @@
                 border-color: #f9f9fa; 
                 border-style: solid; 
                 background-color: #fff;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                padding-left: 0.75rem;
-                padding-right: 0.75rem;
+                margin-top: 1rem;
+                box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #f4f9fa;
             "
         >
-            <h4>
-                sw4wo4v1s@relay.firefox.com
-                <i class="far fa-copy" style="color: #6b7280;"></i>
-            </h4>
-            <div>
-                <p style="font-size: small;">
-                    <strong>Hide Details</strong>
-                    <i class="fas fa-angle-up"></i>
-                </p>
+            <div style="padding: 0.5rem 0.75rem 0.5rem 0.75rem">
+                <h4>
+                    sw4wo4v1s@relay.firefox.com
+                    <i class="far fa-copy" style="color: #6b7280;"></i>
+                </h4>
+                <div style="margin-top: 0.5rem; color: #6b7280;">
+                    <p style="font-size: small;" class="hide">
+                        Hide Details
+                        <i class="fas fa-angle-up "></i>
+                    </p>
+                </div>
             </div>
-            <div>
-                <p class="flex justify-between">
-                    Blocked <span>0</span>
+            <div style="background-color: #f1f1f3; padding: 0.5rem 0.75rem 0.5rem 0.75rem" class="temporary-email ">
+                <p class="flex justify-between" style="color: #6B7280; margin-top: 1rem;">
+                    Blocked <span style="color: #374151;">0</span>
                 </p>
-                <p class="flex justify-between">
-                    Forwarded <span>0</span>
+                <p class="flex justify-between" style="color: #6B7280; margin-top: 0.5rem;">
+                    Forwarded <span style="color: #374151;">0</span>
                 </p>
-                <p class="flex justify-between">
-                    Created <span> May 10, 2021</span>
+                <p class="flex justify-between" style="color: #6B7280; margin-top: 0.5rem">
+                    Created 
+                    <span style="color: #374151;">
+                        May 10, 2021
+                    </span>
                 </p>
-                <button style="width: 100%;">Delete</button>
+                <button style="width: 100%; margin-top: 0.75rem; background-color: white; color: #374151;">Delete</button>
             </div>
         </div>
-        <p style="font-size: small; padding: 1rem 0.1rem 1rem 0.1rem;">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
+        <p class="text-start" style="font-size: small; padding: 1rem 0.1rem 1rem 0.1rem;">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
     </section>
     <footer style="background-color: #2a274e; padding-top: 0.75rem; padding-bottom: 0.75rem;">
         <div class="flex justify-center">
-            <div style="color: white;">
+            <div style="color: white;" class="text-center">
                 <img src="./assets/img/logo-mozilla.svg" alt="" style="height: 2rem;">
-                <p>Privacy</p>
-                <p>Relay Terms</p>
-                <p>Legal</p>
+                <p style="margin-top: 0.75rem;">Privacy</p>
+                <p style="margin-top: 0.75rem;">Relay Terms</p>
+                <p style="margin-top: 0.75rem;">Legal</p>
+                <i class="fab fa-github" style="margin-top:0.75rem;"></i>
             </div>
         </div>
     </footer>

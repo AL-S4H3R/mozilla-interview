@@ -39,8 +39,8 @@ button {
     margin: 0;
     border-radius: 0.25rem;
     text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
+    /* background: #0069ed; */
+    /* color: #ffffff; */
     font-family: sans-serif;
     font-size: 1rem;
     cursor: pointer;
@@ -89,11 +89,17 @@ p {
     color: #e5e7eb;
     align-items: center;
     justify-content: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     font-weight: 400;
+    padding: 0.5rem 0 0.5rem 0;
+    cursor: pointer;
 }
 
+.extended {
+    background-color: #2f2f4e; 
+    text-align: right;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #f9f9fa;
+}
 .header-container {
     margin-top: 4rem;
     border-bottom-width: 2px;    
@@ -134,6 +140,9 @@ p {
     justify-content: space-between;
 }
 
+.text-center {
+    text-align: center;
+}
 .switch {
     position: relative;
     display: inline-block;
@@ -192,11 +201,15 @@ input:checked + .slider:before {
     transform: translateX(1rem);
 }
   
-  /* Rounded sliders */
-  .slider.round {
+/* Rounded sliders */
+.slider.round {
     border-radius: 1.5rem;
-  }
+}
   
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
+
+.inactive {
+    display: none;
+}

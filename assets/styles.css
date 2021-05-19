@@ -62,9 +62,6 @@ p {
   margin: 0;
 }
 
-h2 {
-    text-align: center;
-}
 /* Put CSS Styles Here */
 .nav {
     display: flex;
@@ -99,6 +96,7 @@ h2 {
 
 .header-container {
     margin-top: 4rem;
+    border-bottom-width: 2px;    
 }
 
 .btn {
@@ -111,3 +109,94 @@ h2 {
     text-align: center;
     margin-top: 0.5rem;
 }
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1.25rem;
+    margin-left: 0.25rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider-container {
+    margin-top: 4rem;
+    color: #9CA3AF;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.95rem;
+    width: 0.95rem;
+    left: 0.025rem;
+    top:0.15rem;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(1rem);
+    -ms-transform: translateX(1rem);
+    transform: translateX(1rem);
+}
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 1.5rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

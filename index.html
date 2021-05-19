@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body>
+<body style="background-color: #f9f9fa;">
     <!-- Navbar -->
     <nav class="nav" >
         <img src="./assets/img/logo-relay.png" alt="" class="logo">
@@ -34,9 +34,10 @@
     <!-- main section -->
     <section>
         <div class="header-container">
-            <h2>Manage your relay aliases</h2>
+            <h2 class="text-center">Manage your relay aliases</h2>
         </div>
         <hr/>
+
         <div class="btn">
             <button>
                 <i class="fas fa-plus"></i>
@@ -44,8 +45,63 @@
             </button>
         </div>
         <p class="text-center"> <strong>4</strong> remaining aliases</p>
+        
+        <div class="flex justify-end slider-container">
+            <p>forwarding</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <!-- Details card -->
+        <div 
+            style="
+                border-width: 1px; 
+                border-color: #f9f9fa; 
+                border-style: solid; 
+                background-color: #fff;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            "
+        >
+            <h4>
+                sw4wo4v1s@relay.firefox.com
+                <i class="far fa-copy" style="color: #6b7280;"></i>
+            </h4>
+            <div>
+                <p style="font-size: small;">
+                    <strong>Hide Details</strong>
+                    <i class="fas fa-angle-up"></i>
+                </p>
+            </div>
+            <div>
+                <p class="flex justify-between">
+                    Blocked <span>0</span>
+                </p>
+                <p class="flex justify-between">
+                    Forwarded <span>0</span>
+                </p>
+                <p class="flex justify-between">
+                    Created <span> May 10, 2021</span>
+                </p>
+                <button style="width: 100%;">Delete</button>
+            </div>
+        </div>
+        <p style="font-size: small; padding: 1rem 0.1rem 1rem 0.1rem;">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
     </section>
-    
+    <footer style="background-color: #2a274e; padding-top: 0.75rem; padding-bottom: 0.75rem;">
+        <div class="flex justify-center">
+            <div style="color: white;">
+                <img src="./assets/img/logo-mozilla.svg" alt="" style="height: 2rem;">
+                <p>Privacy</p>
+                <p>Relay Terms</p>
+                <p>Legal</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
     <script src="assets/app.js"></script>
 </body>

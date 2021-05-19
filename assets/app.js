@@ -4,14 +4,19 @@
 	// Add Scripts Here
     
 	const emailComponent = document.getElementsByClassName('temporary-email');
-	const hideButton = document.getElementsByClassName('hide')
+	const desktopEmail = document.getElementsByClassName('desktop-email')[0];
+	const hideButton = document.getElementsByClassName('hide');
 
 	hideButton[0].addEventListener('click', () => {
 		if(emailComponent[0].classList.contains('inactive')){
 			emailComponent[0].classList.remove('inactive')
+			desktopEmail.classList.remove('inactive')
+			console.log(desktopEmail)
 		}
 		else {
+			console.log(desktopEmail)
 			emailComponent[0].className += ' inactive'
+			desktopEmail.className += ' inactive'
 		}
 	})
 

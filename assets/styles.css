@@ -63,12 +63,20 @@ p {
 }
 
 /* Put CSS Styles Here */
+.account-name {
+    display: none;
+}
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
     background-color: #27294e;
+}
+
+.long-nav {
+    display: none;
 }
 
 .logo {
@@ -92,7 +100,9 @@ p {
     font-weight: 400;
     padding: 0.5rem 0 0.5rem 0;
     cursor: pointer;
+
 }
+
 
 .extended {
     background-color: #2f2f4e; 
@@ -100,9 +110,13 @@ p {
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: #f9f9fa;
 }
+
 .header-container {
     margin-top: 4rem;
-    border-bottom-width: 2px;    
+    /* border-bottom-width: 2px;
+    border-color: #374151;    
+    border-bottom: solid;
+    border-width: 1px; */
 }
 
 .btn {
@@ -151,12 +165,24 @@ p {
     margin-left: 0.25rem;
 }
 
+.desktop-details {
+    display: none;
+}
+
+.desktop-email {
+    display: none;
+}
+
+.desktop-footer {
+    display: none;
+    padding: 1rem 2rem 1rem 2rem;
+}
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-  
+
 /* The slider */
 .slider-container {
     margin-top: 4rem;
@@ -174,7 +200,7 @@ p {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 .slider:before {
     position: absolute;
     content: "";
@@ -186,30 +212,110 @@ p {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 input:checked + .slider {
     background-color: #2196F3;
 }
-  
+
 input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
 }
-  
+
 input:checked + .slider:before {
     -webkit-transform: translateX(1rem);
     -ms-transform: translateX(1rem);
     transform: translateX(1rem);
 }
-  
+
 /* Rounded sliders */
 .slider.round {
     border-radius: 1.5rem;
 }
-  
+
 .slider.round:before {
     border-radius: 50%;
 }
 
 .inactive {
     display: none;
+}
+
+@media (min-width: 480px) {
+    .menu {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btn-posn {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section {
+        padding: 0.5rem 4rem 0.5rem 4rem;
+    }
+
+    .long-nav {
+        display: inline;
+        color: whitesmoke;
+    }
+
+    .account-name {
+        display: inline;
+    }
+
+    .slider-container {
+        justify-content: space-between;
+    }
+
+    .desktop-details {
+        display: flex;
+    }
+
+    .desktop-email {
+        display: flex;
+        background-color: #f1f1f3;
+        padding: 1rem 2rem 1rem 2rem;
+        justify-content: space-between;
+    }
+
+    .card {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .temporary-email {
+        display: none;
+    }
+
+    .inactive {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        margin-top: 8rem;
+    }
+
+    .ftr {
+        display: none;
+    }
+
+    .desktop-footer {
+        width: 100%;
+        display: flex;
+        color: whitesmoke;
+    }
+
+    .mob-nav {
+        display: none;
+    }
 }
